@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  vault:
+    image: hashicorp/vault:1.9.3
+    container_name: vault
+    restart: always
+    ports:
+      - "8201:8201"
+      - "8200:8200"
+    volumes:
+      - ./logs:/vault/logs
+      - ./file:/vault/file
+      - ./config:/vault/config/:ro
+      - ./certs:/vault/certs/:ro
+    environment:
+      - VAULT_API_ADDR=https://localhost:8200
+    cap_add:
+      - IPC_LOCK
+    entrypoint: vault server -config=/vault/config/vault.json

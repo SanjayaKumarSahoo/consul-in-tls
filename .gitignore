@@ -1,1 +1,4 @@
 /.idea/
+/vault/file
+/vault/logs
+.DS_Store
