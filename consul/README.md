@@ -10,3 +10,4 @@ $ docker-compose up -d
 
 ### Reference
 - http://man.hubwiz.com/docset/Consul.docset/Contents/Resources/Documents/docs/guides/creating-certificates.html
+- https://www.consul.io/docs/agent/options

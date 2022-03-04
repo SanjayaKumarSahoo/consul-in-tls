@@ -12,7 +12,6 @@
         "http": -1,
         "https": 8501
     },
-    "encrypt": "aPuGh+5UDskRAbkLaXRzFoSOcSM+5vAK+NEYOWHJH7w=",
     "verify_incoming": false,
     "verify_outgoing": true,
     "verify_incoming_rpc": true,
